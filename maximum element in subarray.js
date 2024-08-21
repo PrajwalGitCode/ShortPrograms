@@ -21,7 +21,9 @@ let arr = [];
 
 // Get array elements from the user
 for (let i = 0; i < n; i++) {
-    arr[i] = parseInt(prompt(`Enter element);
+    arr[i] = parseInt(prompt(`Enter element ${i + 1}:`), 10);
 }
 
-
+// Find and print the maximum subarray sum
+let max = findMaximumSubarray(arr, n);
+console.log(max);
